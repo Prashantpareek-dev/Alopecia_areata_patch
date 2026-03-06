@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alopecia Herbal Care – बच्चों के बालों की देखभाल</title>
+<!-- Preload critical images -->
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80&fm=webp" type="image/webp">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80" type="image/jpeg">
+<!-- DNS prefetch for faster image loading -->
+<link rel="dns-prefetch" href="//images.unsplash.com">
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<!-- Optimize font loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -102,6 +111,47 @@
     object-fit: cover;
     display: block;
     filter: grayscale(20%);
+  }
+  
+  /* Image loading optimization */
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  img[loading="lazy"].loaded {
+    opacity: 1;
+  }
+  
+  /* Optimize image display */
+  img {
+    display: block;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  
+  /* Improve picture element performance */
+  picture {
+    display: block;
+    position: relative;
+  }
+  
+  /* Skeleton loading for images */
+  img[loading="lazy"]:not(.loaded) {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+  }
+  
+  @keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
   }
   .hero-image-wrap::after {
     content: '';
@@ -870,25 +920,40 @@
   </p>
 
   <div class="hero-image-wrap">
-    <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80" alt="बच्चे के बाल">
+    <picture>
+      <source srcset="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80&fm=webp" type="image/webp">
+      <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80" alt="बच्चे के बाल" width="500" height="220" fetchpriority="high">
+    </picture>
     <div class="hero-image-label">Alopecia Areata – बच्चों में</div>
   </div>
 
   <div class="pain-cards">
     <div class="pain-card">
-      <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=200&q=80" alt="गंजे पैच" class="pain-card-img">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=200&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=200&q=80" alt="गंजे पैच" class="pain-card-img" width="200" height="70" loading="lazy">
+      </picture>
       <div class="pain-card-text">❌ सिर में गोल गंजे पैच</div>
     </div>
     <div class="pain-card">
-      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80" alt="बाल झड़ना" class="pain-card-img">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80" alt="बाल झड़ना" class="pain-card-img" width="200" height="70" loading="lazy">
+      </picture>
       <div class="pain-card-text">❌ बालों का अचानक झड़ना</div>
     </div>
     <div class="pain-card">
-      <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&q=80" alt="आत्मविश्वास" class="pain-card-img">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&q=80" alt="आत्मविश्वास" class="pain-card-img" width="200" height="70" loading="lazy">
+      </picture>
       <div class="pain-card-text">❌ बच्चे का आत्मविश्वास कम होना</div>
     </div>
     <div class="pain-card">
-      <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=200&q=80" alt="स्कूल" class="pain-card-img">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=200&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=200&q=80" alt="स्कूल" class="pain-card-img" width="200" height="70" loading="lazy">
+      </picture>
       <div class="pain-card-text">❌ स्कूल में मज़ाक का डर</div>
     </div>
   </div>
@@ -902,10 +967,16 @@
   <h2 class="sec-title">बच्चों के बालों की जड़ों को <span class="yellow">पोषण देने</span> में मदद करे</h2>
   <p class="sec-desc">एक खास Ayurvedic Herbal Formula जो scalp को पोषण देकर hair follicles को support करने में मदद करता है।</p>
 
-  <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80" alt="Alopecia Herbal Care Product" class="product-hero-img">
+  <picture>
+    <source srcset="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80&fm=webp" type="image/webp">
+    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80" alt="Alopecia Herbal Care Product" class="product-hero-img" width="500" height="200" loading="lazy">
+  </picture>
 
   <div class="benefit-item">
-    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=100&q=80" alt="जड़ें मजबूत">
+    <picture>
+      <source srcset="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=100&q=80&fm=webp" type="image/webp">
+      <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=100&q=80" alt="जड़ें मजबूत" width="64" height="64" loading="lazy">
+    </picture>
     <div class="benefit-item-content">
       <span class="benefit-check">✔ बालों की जड़ें मजबूत</span>
       <p class="benefit-text">Natural herbs से बालों की जड़ों को deep nourishment मिलती है, जिससे वे अंदर से मजबूत बनती हैं।</p>
@@ -913,7 +984,10 @@
   </div>
 
   <div class="benefit-item">
-    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=100&q=80" alt="Hair Growth">
+    <picture>
+      <source srcset="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=100&q=80&fm=webp" type="image/webp">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=100&q=80" alt="Hair Growth" width="64" height="64" loading="lazy">
+    </picture>
     <div class="benefit-item-content">
       <span class="benefit-check">✔ Patch area में hair growth support</span>
       <p class="benefit-text">गंजे patch वाली जगह पर नए बालों की growth को support करता है।</p>
@@ -921,7 +995,10 @@
   </div>
 
   <div class="benefit-item">
-    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=100&q=80" alt="बालों का झड़ना कम">
+    <picture>
+      <source srcset="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=100&q=80&fm=webp" type="image/webp">
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=100&q=80" alt="बालों का झड़ना कम" width="64" height="64" loading="lazy">
+    </picture>
     <div class="benefit-item-content">
       <span class="benefit-check">✔ बालों का झड़ना कम</span>
       <p class="benefit-text">Regular use से hair fall को कम करने में सहायक। Scalp को healthy रखता है।</p>
@@ -929,7 +1006,10 @@
   </div>
 
   <div class="benefit-item">
-    <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=100&q=80" alt="Gentle Care">
+    <picture>
+      <source srcset="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=100&q=80&fm=webp" type="image/webp">
+      <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=100&q=80" alt="Gentle Care" width="64" height="64" loading="lazy">
+    </picture>
     <div class="benefit-item-content">
       <span class="benefit-check">✔ बच्चों के scalp के लिए gentle</span>
       <p class="benefit-text">Chemical-free Ayurvedic formula, बच्चों की sensitive scalp के लिए पूरी तरह safe.</p>
@@ -948,11 +1028,17 @@
   <div class="ba-container">
     <div class="ba-side ba-before">
       <div class="ba-label">पहले (Before)</div>
-      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=250&q=80" alt="Before Treatment">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=250&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=250&q=80" alt="Before Treatment" width="250" height="200" loading="lazy">
+      </picture>
     </div>
     <div class="ba-side ba-after">
       <div class="ba-label">बाद में (After)</div>
-      <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=250&q=80" alt="After Treatment">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=250&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=250&q=80" alt="After Treatment" width="250" height="200" loading="lazy">
+      </picture>
     </div>
   </div>
 
@@ -987,25 +1073,40 @@
   <p class="sec-desc">बालों की patch problem में scalp को सही पोषण देना बहुत जरूरी होता है।</p>
 
   <div class="doctor-card">
-    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Ayurvedic Doctor" class="doctor-img">
+    <picture>
+      <source srcset="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80&fm=webp" type="image/webp">
+      <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Ayurvedic Doctor" class="doctor-img" width="500" height="300" loading="lazy">
+    </picture>
     <p class="doctor-text">"कई आयुर्वेद विशेषज्ञों के अनुसार natural herbal ingredients scalp health को बेहतर बनाने में सहायक हो सकते हैं और hair follicles को support कर सकते हैं। Alopecia Herbal Care इसी सोच के साथ तैयार किया गया है।"</p>
   </div>
 
   <div class="cert-badges">
     <div class="cert-badge">
-      <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=80&q=80" alt="Ayurvedic">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=80&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=80&q=80" alt="Ayurvedic" width="80" height="80" loading="lazy">
+      </picture>
       <div class="cert-badge-text">Ayurvedic Herbs Based Formula</div>
     </div>
     <div class="cert-badge">
-      <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=80&q=80" alt="Chemical Free">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=80&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=80&q=80" alt="Chemical Free" width="80" height="80" loading="lazy">
+      </picture>
       <div class="cert-badge-text">100% Chemical Free Care</div>
     </div>
     <div class="cert-badge">
-      <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=80&q=80" alt="GMP">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=80&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=80&q=80" alt="GMP" width="80" height="80" loading="lazy">
+      </picture>
       <div class="cert-badge-text">GMP Certified Manufacturing</div>
     </div>
     <div class="cert-badge">
-      <img src="https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?w=80&q=80" alt="Gentle">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?w=80&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?w=80&q=80" alt="Gentle" width="80" height="80" loading="lazy">
+      </picture>
       <div class="cert-badge-text">बच्चों के लिए Gentle Safe</div>
     </div>
   </div>
@@ -1019,25 +1120,37 @@
 
   <div class="symptom-grid">
     <div class="symptom-card">
-      <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=200&q=80" alt="गंजे पैच">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=200&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=200&q=80" alt="गंजे पैच" width="200" height="150" loading="lazy">
+      </picture>
       <div class="symptom-card-body">
         <p>🔸 सिर में गोल-गोल गंजे पैच</p>
       </div>
     </div>
     <div class="symptom-card">
-      <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=200&q=80" alt="बाल गिरना">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=200&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=200&q=80" alt="बाल गिरना" width="200" height="150" loading="lazy">
+      </picture>
       <div class="symptom-card-body">
         <p>🔸 बालों का अचानक गिरना</p>
       </div>
     </div>
     <div class="symptom-card">
-      <img src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=200&q=80" alt="पतले बाल">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=200&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=200&q=80" alt="पतले बाल" width="200" height="150" loading="lazy">
+      </picture>
       <div class="symptom-card-body">
         <p>🔸 बाल पतले और कमजोर होना</p>
       </div>
     </div>
     <div class="symptom-card">
-      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=200&q=80" alt="बार-बार बाल झड़ना">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=200&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=200&q=80" alt="बार-बार बाल झड़ना" width="200" height="150" loading="lazy">
+      </picture>
       <div class="symptom-card-body">
         <p>🔸 एक ही जगह से बार-बार बाल झड़ना</p>
       </div>
@@ -1059,7 +1172,10 @@
       <div class="step-content">
         <div class="step-title">रोजाना scalp पर लगाएँ</div>
         <p class="step-desc">बताए गए तरीके से रोज़ाना बच्चे के scalp पर Alopecia Herbal Care लगाएँ।</p>
-        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80" alt="Apply on Scalp" class="step-img">
+        <picture>
+          <source srcset="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80&fm=webp" type="image/webp">
+          <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80" alt="Apply on Scalp" class="step-img" width="400" height="250" loading="lazy">
+        </picture>
       </div>
     </div>
 
@@ -1068,7 +1184,10 @@
       <div class="step-content">
         <div class="step-title">2–3 महीने नियमित उपयोग करें</div>
         <p class="step-desc">Best results के लिए कम से कम 2–3 महीने नियमित रूप से उपयोग करते रहें।</p>
-        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&q=80" alt="Regular Use" class="step-img">
+        <picture>
+          <source srcset="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&q=80&fm=webp" type="image/webp">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&q=80" alt="Regular Use" class="step-img" width="400" height="250" loading="lazy">
+        </picture>
       </div>
     </div>
 
@@ -1077,7 +1196,10 @@
       <div class="step-content">
         <div class="step-title">Hair care routine follow करें</div>
         <p class="step-desc">बेहतर परिणाम के लिए हमारा FREE Hair Care Diet Chart follow करें जो साथ में मिलेगा।</p>
-        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt="Diet Chart" class="step-img">
+        <picture>
+          <source srcset="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80&fm=webp" type="image/webp">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt="Diet Chart" class="step-img" width="400" height="250" loading="lazy">
+        </picture>
       </div>
     </div>
   </div>
@@ -1092,7 +1214,10 @@
   <div class="review-grid">
     <div class="review-card">
       <div class="review-header">
-        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Priya" class="review-avatar">
+        <picture>
+          <source srcset="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80&fm=webp" type="image/webp">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Priya" class="review-avatar" width="100" height="100" loading="lazy">
+        </picture>
         <div class="reviewer-info">
           <div class="reviewer-name">प्रिया शर्मा</div>
           <div class="reviewer-loc">📍 जयपुर, राजस्थान</div>
@@ -1100,13 +1225,19 @@
       </div>
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"मेरे बेटे के सिर में 3-4 जगह गंजे पैच हो गए थे। 2 महीने के उपयोग के बाद छोटे-छोटे नए बाल दिखने लगे हैं। बहुत खुश हूँ।"</p>
-      <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=400&q=80" alt="Result" class="review-img">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=400&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=400&q=80" alt="Result" class="review-img" width="400" height="250" loading="lazy">
+      </picture>
       <span class="review-badge">✔ Verified Purchase</span>
     </div>
 
     <div class="review-card">
       <div class="review-header">
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Rakesh" class="review-avatar">
+        <picture>
+          <source srcset="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80&fm=webp" type="image/webp">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Rakesh" class="review-avatar" width="100" height="100" loading="lazy">
+        </picture>
         <div class="reviewer-info">
           <div class="reviewer-name">राकेश वर्मा</div>
           <div class="reviewer-loc">📍 दिल्ली, NCR</div>
@@ -1114,13 +1245,19 @@
       </div>
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"बेटी का confidence बिल्कुल कम हो गया था। Alopecia Herbal Care शुरू किया, अब scalp healthy लग रही है और बाल कम झड़ रहे हैं।"</p>
-      <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80" alt="Result" class="review-img">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80" alt="Result" class="review-img" width="400" height="250" loading="lazy">
+      </picture>
       <span class="review-badge">✔ Verified Purchase</span>
     </div>
 
     <div class="review-card">
       <div class="review-header">
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sunita" class="review-avatar">
+        <picture>
+          <source srcset="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80&fm=webp" type="image/webp">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sunita" class="review-avatar" width="100" height="100" loading="lazy">
+        </picture>
         <div class="reviewer-info">
           <div class="reviewer-name">सुनीता पटेल</div>
           <div class="reviewer-loc">📍 अहमदाबाद, गुजरात</div>
@@ -1128,7 +1265,10 @@
       </div>
       <div class="review-stars">★★★★☆</div>
       <p class="review-text">"Chemical-free होने की वजह से मुझे बच्चे पर use करने में कोई डर नहीं था। Free diet chart बहुत helpful है। पूरे परिवार को recommend करूँगी।"</p>
-      <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&q=80" alt="Result" class="review-img">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&q=80&fm=webp" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&q=80" alt="Result" class="review-img" width="400" height="250" loading="lazy">
+      </picture>
       <span class="review-badge">✔ Verified Purchase</span>
     </div>
   </div>
@@ -1139,7 +1279,10 @@
   <h2 class="offer-title">🎁 Limited Time Offer</h2>
   <p class="offer-sub">आज ही order करें और पाएँ ये exclusive benefits:</p>
 
-  <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=500&q=80" alt="Special Offer" class="offer-img">
+  <picture>
+    <source srcset="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=500&q=80&fm=webp" type="image/webp">
+    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=500&q=80" alt="Special Offer" class="offer-img" width="500" height="300" loading="lazy">
+  </picture>
 
   <div class="discount-badge">
     <span>आज सिर्फ</span> 10% OFF <span>पाएँ</span>
@@ -1304,6 +1447,49 @@ document.querySelectorAll('.benefit-item, .review-card, .symptom-card, .step-ite
   el.style.transform = 'translateY(20px)';
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   observer.observe(el);
+});
+
+// Enhanced lazy loading for images with intersection observer
+const imageObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      
+      // Handle loading for lazy images
+      if (img.loading === 'lazy') {
+        img.classList.add('loaded');
+        
+        // Preload next images in sequence for better UX
+        const nextImages = img.closest('section')?.querySelectorAll('img[loading="lazy"]:not(.loaded)');
+        if (nextImages && nextImages.length > 0) {
+          const nextImg = nextImages[0];
+          if (nextImg && nextImg !== img) {
+            nextImg.loading = 'eager'; // Preload the next image
+          }
+        }
+      }
+      
+      observer.unobserve(img);
+    }
+  });
+}, {
+  rootMargin: '50px 0px',
+  threshold: 0.01
+});
+
+// Observe all images for enhanced lazy loading
+document.querySelectorAll('img').forEach(img => {
+  imageObserver.observe(img);
+});
+
+// Preload critical images on page load
+window.addEventListener('load', () => {
+  // Preconnect to image CDN for faster loading
+  const preconnectLink = document.createElement('link');
+  preconnectLink.rel = 'preconnect';
+  preconnectLink.href = 'https://images.unsplash.com';
+  preconnectLink.crossOrigin = 'anonymous';
+  document.head.appendChild(preconnectLink);
 });
 </script>
 </body>
