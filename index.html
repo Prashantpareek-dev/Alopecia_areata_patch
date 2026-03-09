@@ -1,1496 +1,1964 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alopecia Herbal Care – बच्चों के बालों की देखभाल</title>
-<!-- Preload critical images -->
-<link rel="preload" as="image" href="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80&fm=webp" type="image/webp">
-<link rel="preload" as="image" href="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80" type="image/jpeg">
-<!-- DNS prefetch for faster image loading -->
-<link rel="dns-prefetch" href="//images.unsplash.com">
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<!-- Optimize font loading -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --black: #0a0a0a;
-    --deep: #111111;
-    --card: #1a1a1a;
-    --yellow: #FFD600;
-    --yellow-light: #FFE840;
-    --yellow-dark: #C9A800;
-    --white: #ffffff;
-    --off-white: #f5f5f0;
-    --gray: #888888;
-    --max: 450px;
-  }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  html { scroll-behavior: smooth; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alopecia Herbal Care – बच्चों के बालों की देखभाल</title>
+  <!-- Preload critical images -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80&fm=webp"
+    type="image/webp">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80"
+    type="image/jpeg">
+  <!-- DNS prefetch for faster image loading -->
+  <link rel="dns-prefetch" href="//images.unsplash.com">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <!-- Optimize font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --deep: #111111;
+      --card: #1a1a1a;
+      --yellow: #FFD600;
+      --yellow-light: #FFE840;
+      --yellow-dark: #C9A800;
+      --white: #ffffff;
+      --off-white: #f5f5f0;
+      --gray: #888888;
+      --max: 450px;
+    }
 
-  body {
-    background: #0a0a0a;
-    font-family: 'Noto Sans Devanagari', 'Halant', serif;
-    color: var(--white);
-    max-width: var(--max);
-    margin: 0 auto;
-    overflow-x: hidden;
-    position: relative;
-  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  /* ── HERO ── */
-  .hero {
-    background: var(--black);
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .hero-top-strip {
-    background: var(--yellow);
-    color: var(--black);
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 8px 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  .hero-badge {
-    display: inline-block;
-    background: var(--yellow);
-    color: var(--black);
-    font-size: 11px;
-    font-weight: 800;
-    padding: 5px 14px;
-    border-radius: 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 24px 20px 0;
-    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
-  }
-  .hero-headline {
-    font-family: 'Halant', 'Noto Sans Devanagari', serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.2;
-    padding: 16px 20px 0;
-    color: var(--white);
-  }
-  .hero-headline span {
-    color: var(--yellow);
-    position: relative;
-    display: inline;
-  }
-  .hero-headline span::after {
-    content: '';
-    position: absolute;
-    bottom: -2px; left: 0; right: 0;
-    height: 3px;
-    background: var(--yellow);
-  }
-  .hero-sub {
-    font-size: 14px;
-    color: #ccc;
-    padding: 12px 20px;
-    line-height: 1.7;
-  }
-  .hero-image-wrap {
-    position: relative;
-    margin: 10px 20px;
-    border: 2px solid var(--yellow);
-    overflow: hidden;
-  }
-  .hero-image-wrap img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-    filter: grayscale(20%);
-  }
-  
-  /* Image loading optimization */
-  img {
-    height: auto;
-    max-width: 100%;
-  }
-  
-  img[loading="lazy"] {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  img[loading="lazy"].loaded {
-    opacity: 1;
-  }
-  
-  /* Optimize image display */
-  img {
-    display: block;
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-  }
-  
-  /* Improve picture element performance */
-  picture {
-    display: block;
-    position: relative;
-  }
-  
-  /* Skeleton loading for images */
-  img[loading="lazy"]:not(.loaded) {
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    animation: loading 1.5s infinite;
-  }
-  
-  @keyframes loading {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
-  }
-  .hero-image-wrap::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
-  }
-  .hero-image-label {
-    position: absolute;
-    bottom: 12px; left: 12px;
-    color: var(--yellow);
-    font-size: 12px;
-    font-weight: 700;
-    z-index: 2;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  .pain-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 16px 20px;
-  }
-  .pain-card {
-    background: var(--card);
-    border: 1px solid #2a2a2a;
-    border-left: 3px solid var(--yellow);
-    padding: 12px 10px;
-    position: relative;
-    overflow: hidden;
-  }
-  .pain-card-icon {
-    font-size: 22px;
-    margin-bottom: 6px;
-    display: block;
-  }
-  .pain-card-img {
-    width: 100%;
-    height: 70px;
-    object-fit: cover;
-    margin-bottom: 8px;
-    border: 1px solid #333;
-  }
-  .pain-card-text {
-    font-size: 12px;
-    color: #ccc;
-    line-height: 1.5;
-    font-weight: 500;
-  }
-  .hero-cta {
-    margin: 10px 20px 30px;
-    background: var(--yellow);
-    color: var(--black);
-    border: none;
-    padding: 16px;
-    font-family: 'Noto Sans Devanagari', serif;
-    font-size: 16px;
-    font-weight: 800;
-    width: calc(100% - 40px);
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
-    animation: pulse-btn 2s ease-in-out infinite;
-  }
-  @keyframes pulse-btn {
-    0%,100% { box-shadow: 0 0 0 0 rgba(255,214,0,0.4); }
-    50% { box-shadow: 0 0 0 12px rgba(255,214,0,0); }
-  }
+    html {
+      scroll-behavior: smooth;
+    }
 
-  /* ── SECTION WRAPPER ── */
-  section {
-    padding: 36px 20px;
-    position: relative;
-  }
-  section:nth-child(even) { background: #111; }
-  section:nth-child(odd) { background: #0a0a0a; }
+    body {
+      background: #0a0a0a;
+      font-family: 'Noto Sans Devanagari', 'Halant', serif;
+      color: var(--white);
+      max-width: var(--max);
+      margin: 0 auto;
+      overflow-x: hidden;
+      position: relative;
+    }
 
-  .sec-label {
-    display: inline-block;
-    background: var(--yellow);
-    color: var(--black);
-    font-size: 10px;
-    font-weight: 800;
-    padding: 4px 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-  }
-  .sec-title {
-    font-family: 'Halant', serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--white);
-    margin-bottom: 8px;
-  }
-  .sec-title .yellow { color: var(--yellow); }
-  .sec-desc {
-    font-size: 13px;
-    color: #bbb;
-    line-height: 1.8;
-    margin-bottom: 16px;
-  }
+    /* ── HERO ── */
+    .hero {
+      background: var(--black);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-  /* ── PRODUCT SECTION ── */
-  .product-hero-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border: 2px solid var(--yellow);
-    margin-bottom: 20px;
-    display: block;
-  }
-  .benefit-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    margin-bottom: 18px;
-    padding: 14px;
-    background: var(--card);
-    border-left: 3px solid var(--yellow);
-    position: relative;
-    overflow: hidden;
-  }
-  .benefit-item img {
-    width: 64px;
-    height: 64px;
-    object-fit: cover;
-    border: 1px solid var(--yellow);
-    flex-shrink: 0;
-  }
-  .benefit-item-content { flex: 1; }
-  .benefit-check {
-    color: var(--yellow);
-    font-size: 16px;
-    font-weight: 800;
-    display: block;
-    margin-bottom: 4px;
-  }
-  .benefit-text {
-    font-size: 13px;
-    color: #ddd;
-    line-height: 1.6;
-  }
+    .hero-top-strip {
+      background: var(--yellow);
+      color: var(--black);
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
 
-  /* ── BEFORE AFTER ── */
-  .ba-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    margin: 20px 0;
-    border: 2px solid var(--yellow);
-    overflow: hidden;
-    position: relative;
-  }
-  .ba-container::after {
-    content: 'VS';
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--yellow);
-    color: var(--black);
-    font-weight: 900;
-    font-size: 14px;
-    width: 36px; height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-    pointer-events: none;
-  }
-  .ba-side { position: relative; }
-  .ba-side img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-  }
-  .ba-label {
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    padding: 8px;
-    font-size: 11px;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  .ba-before .ba-label { background: rgba(0,0,0,0.85); color: #ff6b6b; }
-  .ba-after .ba-label { background: var(--yellow); color: var(--black); }
-  .ba-before img { filter: grayscale(60%) brightness(0.8); }
-  .ba-after img { filter: brightness(1.05) saturate(1.1); }
-  .ba-points {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 16px;
-  }
-  .ba-point-box {
-    padding: 14px;
-    background: var(--card);
-    border-top: 3px solid;
-  }
-  .ba-point-box.before { border-color: #555; }
-  .ba-point-box.after { border-color: var(--yellow); }
-  .ba-point-title {
-    font-size: 11px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-  }
-  .ba-point-box.before .ba-point-title { color: #888; }
-  .ba-point-box.after .ba-point-title { color: var(--yellow); }
-  .ba-point-list { list-style: none; }
-  .ba-point-list li {
-    font-size: 11px;
-    color: #ccc;
-    padding: 3px 0;
-    border-bottom: 1px solid #222;
-    line-height: 1.5;
-  }
-  .ba-point-list li::before {
-    margin-right: 5px;
-  }
-  .ba-point-box.before .ba-point-list li::before { content: '✗'; color: #ff6b6b; }
-  .ba-point-box.after .ba-point-list li::before { content: '✓'; color: var(--yellow); }
-  .disclaimer-small {
-    font-size: 10px;
-    color: #555;
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-  }
+    .hero-badge {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 15px;
+      font-weight: 800;
+      padding: 5px 14px;
+      border-radius: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 24px 20px 0;
+      clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+    }
 
-  /* ── DOCTOR ── */
-  .doctor-card {
-    background: var(--card);
-    border: 1px solid #2a2a2a;
-    padding: 20px;
-    margin-bottom: 16px;
-    position: relative;
-  }
-  .doctor-card::before {
-    content: '"';
-    font-family: 'Halant', serif;
-    font-size: 80px;
-    color: var(--yellow);
-    opacity: 0.15;
-    position: absolute;
-    top: -10px; left: 10px;
-    line-height: 1;
-  }
-  .doctor-img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    margin-bottom: 14px;
-    border-bottom: 3px solid var(--yellow);
-  }
-  .doctor-text {
-    font-size: 13px;
-    color: #ccc;
-    line-height: 1.8;
-    font-style: italic;
-    margin-bottom: 12px;
-  }
-  .cert-badges {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-top: 16px;
-  }
-  .cert-badge {
-    background: #0f0f0f;
-    border: 1px solid var(--yellow);
-    padding: 12px 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .cert-badge img {
-    width: 36px;
-    height: 36px;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
-  .cert-badge-text {
-    font-size: 10px;
-    color: var(--yellow);
-    font-weight: 700;
-    text-align: left;
-    line-height: 1.4;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
+    .hero-headline {
+      font-family: 'Halant', 'Noto Sans Devanagari', serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.2;
+      padding: 16px 20px 0;
+      color: var(--white);
+    }
 
-  /* ── WHO IS IT FOR ── */
-  .symptom-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 16px;
-  }
-  .symptom-card {
-    background: var(--card);
-    border: 1px solid #222;
-    overflow: hidden;
-    position: relative;
-  }
-  .symptom-card img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    display: block;
-    filter: grayscale(30%);
-  }
-  .symptom-card-body {
-    padding: 10px;
-    border-top: 2px solid var(--yellow);
-  }
-  .symptom-card-body p {
-    font-size: 11px;
-    color: #ddd;
-    line-height: 1.5;
-  }
+    .hero-headline span {
+      color: var(--yellow);
+      position: relative;
+      display: inline;
+    }
 
-  /* ── HOW TO USE ── */
-  .steps-wrap { margin-top: 16px; }
-  .step-item {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    margin-bottom: 16px;
-    position: relative;
-  }
-  .step-item:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    left: 22px;
-    top: 48px;
-    bottom: -10px;
-    width: 2px;
-    background: linear-gradient(to bottom, var(--yellow), transparent);
-  }
-  .step-num {
-    width: 44px;
-    height: 44px;
-    background: var(--yellow);
-    color: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    font-size: 18px;
-    flex-shrink: 0;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  }
-  .step-content { flex: 1; }
-  .step-img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    margin-top: 10px;
-    border: 1px solid #333;
-  }
-  .step-title {
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--yellow);
-    margin-bottom: 4px;
-  }
-  .step-desc {
-    font-size: 12px;
-    color: #bbb;
-    line-height: 1.6;
-  }
+    .hero-headline span::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--yellow);
+    }
 
-  /* ── REVIEWS ── */
-  .review-grid { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
-  .review-card {
-    background: var(--card);
-    border: 1px solid #222;
-    padding: 16px;
-    position: relative;
-    overflow: hidden;
-  }
-  .review-card::after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    width: 40px; height: 40px;
-    background: var(--yellow);
-    clip-path: polygon(0 0, 100% 0, 100% 100%);
-  }
-  .review-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 10px;
-  }
-  .review-avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--yellow);
-    flex-shrink: 0;
-  }
-  .reviewer-info {}
-  .reviewer-name { font-size: 13px; font-weight: 700; color: var(--white); }
-  .reviewer-loc { font-size: 10px; color: #888; }
-  .review-stars { color: var(--yellow); font-size: 14px; margin-bottom: 6px; }
-  .review-text { font-size: 12px; color: #ccc; line-height: 1.7; }
-  .review-img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    margin-top: 10px;
-    border: 1px solid #333;
-  }
-  .review-badge {
-    display: inline-block;
-    background: #1a1a00;
-    border: 1px solid var(--yellow);
-    color: var(--yellow);
-    font-size: 9px;
-    padding: 2px 8px;
-    margin-top: 8px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
+    .hero-sub {
+      font-size: 18px;
+      color: #e8e2e2;
+      padding: 12px 20px;
+      line-height: 1.7;
+    }
 
-  /* ── OFFER ── */
-  .offer-section {
-    background: var(--yellow) !important;
-    color: var(--black);
-    text-align: center;
-    padding: 30px 20px !important;
-    position: relative;
-    overflow: hidden;
-  }
-  .offer-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 10px,
-      rgba(0,0,0,0.04) 10px,
-      rgba(0,0,0,0.04) 20px
-    );
-  }
-  .offer-title {
-    font-family: 'Halant', serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--black);
-    margin-bottom: 6px;
-    position: relative;
-    z-index: 1;
-  }
-  .offer-sub {
-    font-size: 13px;
-    color: #333;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-  }
-  .offer-img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 3px solid var(--black);
-    position: relative;
-    z-index: 1;
-  }
-  .offer-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-  }
-  .offer-card {
-    background: var(--black);
-    color: var(--white);
-    padding: 14px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-  }
-  .offer-card-icon { font-size: 22px; }
-  .offer-card-label {
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--yellow);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    line-height: 1.4;
-  }
-  .offer-card-val {
-    font-size: 10px;
-    color: #aaa;
-    text-align: center;
-  }
-  .discount-badge {
-    display: inline-block;
-    background: var(--black);
-    color: var(--yellow);
-    font-size: 28px;
-    font-weight: 900;
-    padding: 12px 24px;
-    margin-bottom: 16px;
-    border: 3px solid var(--black);
-    position: relative;
-    z-index: 1;
-  }
-  .discount-badge span { font-size: 14px; }
+    .hero-image-wrap {
+      position: relative;
+      margin: 10px 20px;
+      border: 2px solid var(--yellow);
+      overflow: hidden;
+    }
 
-  /* ── ORDER / FORM ── */
-  .order-section {
-    background: var(--black) !important;
-    padding: 36px 20px !important;
-  }
-  .order-title {
-    font-family: 'Halant', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1.3;
-    margin-bottom: 6px;
-  }
-  .order-title span { color: var(--yellow); }
-  .order-desc {
-    font-size: 12px;
-    color: #999;
-    margin-bottom: 20px;
-    line-height: 1.7;
-  }
-  .form-wrap {
-    background: var(--card);
-    border: 1px solid #2a2a2a;
-    border-top: 3px solid var(--yellow);
-    padding: 20px;
-  }
-  .form-group { margin-bottom: 16px; }
-  .form-label {
-    display: block;
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--yellow);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 6px;
-  }
-  .form-input {
-    width: 100%;
-    background: #111;
-    border: 1px solid #333;
-    border-bottom: 2px solid var(--yellow);
-    color: var(--white);
-    padding: 12px 14px;
-    font-family: 'Noto Sans Devanagari', serif;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.2s;
-    -webkit-appearance: none;
-    appearance: none;
-  }
-  .form-input:focus { border-color: var(--yellow); background: #181818; }
-  .form-input::placeholder { color: #555; }
-  .submit-btn {
-    width: 100%;
-    background: var(--yellow);
-    color: var(--black);
-    border: none;
-    padding: 18px;
-    font-family: 'Noto Sans Devanagari', serif;
-    font-size: 17px;
-    font-weight: 800;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    letter-spacing: 0.5px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 4px;
-  }
-  .submit-btn::after {
-    content: '';
-    position: absolute;
-    top: 0; left: -100%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    animation: shimmer 2s ease-in-out infinite;
-  }
-  @keyframes shimmer {
-    0% { left: -100%; }
-    100% { left: 200%; }
-  }
-  .trust-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 16px;
-  }
-  .trust-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 10px;
-    color: #888;
-  }
-  .trust-item span:first-child { color: var(--yellow); font-size: 12px; }
+    .hero-image-wrap img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(20%);
+    }
 
-  /* ── FAQ ── */
-  .faq-list { margin-top: 16px; }
-  .faq-item {
-    border-bottom: 1px solid #1e1e1e;
-    overflow: hidden;
-  }
-  .faq-q {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 0;
-    cursor: pointer;
-    gap: 10px;
-  }
-  .faq-q-text {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--white);
-    flex: 1;
-    line-height: 1.5;
-  }
-  .faq-icon {
-    width: 24px;
-    height: 24px;
-    background: var(--yellow);
-    color: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 700;
-    flex-shrink: 0;
-    transition: transform 0.3s;
-  }
-  .faq-item.open .faq-icon { transform: rotate(45deg); }
-  .faq-a {
-    font-size: 12px;
-    color: #aaa;
-    line-height: 1.8;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s;
-    padding: 0;
-  }
-  .faq-item.open .faq-a { max-height: 200px; padding-bottom: 16px; }
+    /* Image loading optimization */
+    img {
+      height: auto;
+      max-width: 100%;
+    }
 
-  /* ── DISCLAIMER ── */
-  .disclaimer-section {
-    background: #080808 !important;
-    padding: 24px 20px !important;
-    border-top: 2px solid #1a1a1a;
-  }
-  .disclaimer-title {
-    font-size: 10px;
-    font-weight: 800;
-    color: #555;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-  }
-  .disclaimer-text {
-    font-size: 10px;
-    color: #444;
-    line-height: 1.8;
-  }
+    img[loading="lazy"] {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
 
-  /* ── STICKY CTA ── */
-  .sticky-bar {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: var(--max);
-    background: var(--yellow);
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 999;
-    box-shadow: 0 -4px 20px rgba(255,214,0,0.3);
-  }
-  .sticky-text { font-size: 12px; color: var(--black); font-weight: 700; line-height: 1.4; }
-  .sticky-btn {
-    background: var(--black);
-    color: var(--yellow);
-    padding: 10px 20px;
-    font-family: 'Noto Sans Devanagari', serif;
-    font-size: 13px;
-    font-weight: 800;
-    border: none;
-    cursor: pointer;
-    white-space: nowrap;
-    text-decoration: none;
-    display: inline-block;
-  }
+    img[loading="lazy"].loaded {
+      opacity: 1;
+    }
 
-  /* ── DIVIDER ── */
-  .divider {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 20px 0;
-  }
-  .divider-line { flex: 1; height: 1px; background: #222; }
-  .divider-dot { width: 6px; height: 6px; background: var(--yellow); transform: rotate(45deg); }
+    /* Optimize image display */
+    img {
+      display: block;
+      image-rendering: auto;
+      image-rendering: crisp-edges;
+      image-rendering: -webkit-optimize-contrast;
+    }
 
-  /* Animations */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .fade-up { animation: fadeUp 0.6s ease forwards; }
-</style>
+    /* Improve picture element performance */
+    picture {
+      display: block;
+      position: relative;
+    }
+
+    /* Skeleton loading for images */
+    img[loading="lazy"]:not(.loaded) {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+    }
+
+    @keyframes loading {
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    .hero-image-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
+    }
+
+    .hero-image-label {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      color: var(--yellow);
+      font-size: 18px;
+      font-weight: 700;
+      z-index: 2;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .pain-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 16px 20px;
+    }
+
+    .pain-card {
+      background: var(--card);
+      border: 1px solid #2a2a2a;
+      border-left: 3px solid var(--yellow);
+      padding: 12px 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pain-card-icon {
+      font-size: 22px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .pain-card-img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 8px;
+      border: 1px solid #333;
+    }
+
+    .pain-card-text {
+      font-size: 18px;
+      color: #f5f3f3;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    .hero-cta {
+      margin: 10px 20px 30px;
+      background: var(--yellow);
+      color: var(--black);
+      border: none;
+      padding: 16px;
+      font-family: 'Noto Sans Devanagari', serif;
+      font-size: 19px;
+      font-weight: 800;
+      width: calc(100% - 40px);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
+      animation: pulse-btn 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-btn {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 214, 0, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 0 12px rgba(255, 214, 0, 0);
+      }
+    }
+
+    /* ── SECTION WRAPPER ── */
+    section {
+      padding: 19px 10px;
+      position: relative;
+    }
+
+    section:nth-child(even) {
+      background: #111;
+    }
+
+    section:nth-child(odd) {
+      background: #0a0a0a;
+    }
+
+    .sec-label {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 15px;
+      font-weight: 800;
+      padding: 4px 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .sec-title {
+      font-family: 'Halant', serif;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .sec-title .yellow {
+      color: var(--yellow);
+    }
+
+    .sec-desc {
+      font-size: 18px;
+      color: #ece8e8;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    /* ── PRODUCT SECTION ── */
+    .product-hero-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid var(--yellow);
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 18px;
+      padding: 14px;
+      background: var(--card);
+      border-left: 3px solid var(--yellow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .benefit-item img {
+      width: 164px;
+      height: 164px;
+      object-fit: cover;
+      border: 1px solid var(--yellow);
+      flex-shrink: 0;
+    }
+
+    .benefit-item-content {
+      flex: 1;
+    }
+
+    .benefit-check {
+      color: var(--yellow);
+      font-size: 16px;
+      font-weight: 800;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .benefit-text {
+      font-size: 18px;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    /* ── BEFORE AFTER ── */
+    .ba-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin: 20px 0;
+      border: 2px solid var(--yellow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .ba-container::after {
+      content: 'VS';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--yellow);
+      color: var(--black);
+      font-weight: 900;
+      font-size: 14px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .ba-side {
+      position: relative;
+    }
+
+    .ba-side img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ba-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 8px;
+      font-size: 11px;
+      font-weight: 800;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .ba-before .ba-label {
+      background: rgba(0, 0, 0, 0.85);
+      color: #ff6b6b;
+    }
+
+    .ba-after .ba-label {
+      background: var(--yellow);
+      color: var(--black);
+    }
+
+    .ba-before img {
+      filter: grayscale(60%) brightness(0.8);
+    }
+
+    .ba-after img {
+      filter: brightness(1.05) saturate(1.1);
+    }
+
+    .ba-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .ba-point-box {
+      padding: 14px;
+      background: var(--card);
+      border-top: 3px solid;
+    }
+
+    .ba-point-box.before {
+      border-color: #555;
+    }
+
+    .ba-point-box.after {
+      border-color: var(--yellow);
+    }
+
+    .ba-point-title {
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .ba-point-box.before .ba-point-title {
+      color: #888;
+    }
+
+    .ba-point-box.after .ba-point-title {
+      color: var(--yellow);
+    }
+
+    .ba-point-list {
+      list-style: none;
+    }
+
+    .ba-point-list li {
+      font-size: 18px;
+      color: #f3efef;
+      padding: 3px 0;
+      border-bottom: 1px solid #222;
+      line-height: 1.5;
+    }
+
+    .ba-point-list li::before {
+      margin-right: 5px;
+    }
+
+    .ba-point-box.before .ba-point-list li::before {
+      content: '✗';
+      color: #ff6b6b;
+    }
+
+    .ba-point-box.after .ba-point-list li::before {
+      content: '✓';
+      color: var(--yellow);
+    }
+
+    .disclaimer-small {
+      font-size: 15px;
+      color: #f9f0f0;
+      text-align: center;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* ── DOCTOR ── */
+    .doctor-card {
+      background: var(--card);
+      border: 1px solid #2a2a2a;
+      padding: 20px;
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .doctor-card::before {
+      content: '"';
+      font-family: 'Halant', serif;
+      font-size: 80px;
+      color: var(--yellow);
+      opacity: 0.15;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      line-height: 1;
+    }
+
+    .doctor-img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      margin-bottom: 14px;
+      border-bottom: 3px solid var(--yellow);
+    }
+
+    .doctor-text {
+      font-size: 15px;
+      color: #f3efef;
+      font-weight: 500;
+      line-height: 1.8;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+
+    .cert-badges {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .cert-badge {
+      background: #0f0f0f;
+      border: 1px solid var(--yellow);
+      padding: 12px 10px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cert-badge img {
+      width: 86px;
+      height: 56px;
+      border-radius: 45%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .cert-badge-text {
+      font-size: 12px;
+      color: var(--yellow);
+      font-weight: 600;
+      text-align: left;
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── WHO IS IT FOR ── */
+    .symptom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .symptom-card {
+      background: var(--card);
+      border: 1px solid #222;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .symptom-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(30%);
+    }
+
+    .symptom-card-body {
+      padding: 20px;
+      border-top: 2px solid var(--yellow);
+    }
+
+    .symptom-card-body p {
+      font-size: 20px;
+      font-weight: 600;
+      color: #ddd;
+      line-height: 1.5;
+    }
+
+    /* ── HOW TO USE ── */
+    .steps-wrap {
+      margin-top: 16px;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .step-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 22px;
+      top: 48px;
+      bottom: -10px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--yellow), transparent);
+    }
+
+    .step-num {
+      width: 44px;
+      height: 44px;
+      background: var(--yellow);
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 18px;
+      flex-shrink: 0;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+
+    .step-content {
+      flex: 1;
+    }
+
+    .step-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-top: 10px;
+      border: 1px solid #333;
+    }
+
+    .step-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--yellow);
+      margin-bottom: 4px;
+    }
+
+    .step-desc {
+      font-size: 18px;
+      color: #ece8e8;
+      line-height: 1.6;
+    }
+
+    /* ── REVIEWS ── */
+    .review-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .review-card {
+      background: var(--card);
+      border: 1px solid #222;
+      padding: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .review-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      background: var(--yellow);
+      clip-path: polygon(0 0, 100% 0, 100% 100%);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .review-avatar {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--yellow);
+      flex-shrink: 0;
+    }
+
+    .reviewer-info {}
+
+    .reviewer-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .reviewer-loc {
+      font-size: 10px;
+      color: #888;
+    }
+
+    .review-stars {
+      color: var(--yellow);
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .review-text {
+      font-size: 12px;
+      color: #ccc;
+      line-height: 1.7;
+    }
+
+    .review-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-top: 10px;
+      border: 1px solid #333;
+    }
+
+    .review-badge {
+      display: inline-block;
+      background: #1a1a00;
+      border: 1px solid var(--yellow);
+      color: var(--yellow);
+      font-size: 9px;
+      padding: 2px 8px;
+      margin-top: 8px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* ── OFFER ── */
+    .offer-section {
+      background: var(--yellow) !important;
+      color: var(--black);
+      text-align: center;
+      padding: 30px 20px !important;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .offer-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(45deg,
+          transparent,
+          transparent 10px,
+          rgba(0, 0, 0, 0.04) 10px,
+          rgba(0, 0, 0, 0.04) 20px);
+    }
+
+    .offer-title {
+      font-family: 'Halant', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .offer-sub {
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .offer-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      /* border: 3px solid var(--black); */
+      position: relative;
+      z-index: 1;
+    }
+
+    .offer-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .offer-card {
+      background: var(--black);
+      color: var(--white);
+      padding: 14px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .offer-card-icon {
+      font-size: 22px;
+    }
+
+    .offer-card-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--yellow);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+    }
+
+    .offer-card-val {
+      font-size: 14px;
+      color: #f3ebeb;
+      text-align: center;
+    }
+
+    .discount-badge {
+      display: inline-block;
+      background: var(--black);
+      color: var(--yellow);
+      font-size: 36px;
+      font-weight: 900;
+      padding: 12px 24px;
+      margin-bottom: 16px;
+      border: 3px solid var(--black);
+      position: relative;
+      z-index: 1;
+    }
+
+    .discount-badge span {
+      font-size: 18px;
+    }
+
+    /* ── ORDER / FORM ── */
+    .order-section {
+      background: var(--black) !important;
+      padding: 36px 20px !important;
+    }
+
+    .order-title {
+      font-family: 'Halant', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+
+    .order-title span {
+      color: var(--yellow);
+    }
+
+    .order-desc {
+      font-size: 16px;
+      color: #f3f1f1;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .form-wrap {
+      background: var(--card);
+      border: 1px solid #2a2a2a;
+      border-top: 3px solid var(--yellow);
+      padding: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--yellow);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .form-input {
+      width: 100%;
+      background: #111;
+      border: 1px solid #333;
+      border-bottom: 2px solid var(--yellow);
+      color: var(--white);
+      padding: 12px 14px;
+      font-family: 'Noto Sans Devanagari', serif;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .form-input:focus {
+      border-color: var(--yellow);
+      background: #181818;
+    }
+
+    .form-input::placeholder {
+      color: #d0caca;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: var(--yellow);
+      color: var(--black);
+      border: none;
+      padding: 18px;
+      font-family: 'Noto Sans Devanagari', serif;
+      font-size: 17px;
+      font-weight: 800;
+      cursor: pointer;
+      display: block;
+      text-align: center;
+      letter-spacing: 0.5px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 4px;
+    }
+
+    .submit-btn::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      animation: shimmer 2s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        left: -100%;
+      }
+
+      100% {
+        left: 200%;
+      }
+    }
+
+    .trust-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 16px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      font-size: 16px;
+      color: #d9d4d4;
+    }
+
+    .trust-item span:first-child {
+      color: var(--yellow);
+      font-size: 16px;
+    }
+
+    /* ── FAQ ── */
+    .faq-list {
+      margin-top: 16px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #1e1e1e;
+      overflow: hidden;
+    }
+
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      cursor: pointer;
+      gap: 10px;
+    }
+
+    .faq-q-text {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--white);
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    .faq-icon {
+      width: 24px;
+      height: 24px;
+      background: var(--yellow);
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-a {
+      font-size: 16px;
+      color: #e9e4e4;
+      line-height: 1.8;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s;
+      padding: 0;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 200px;
+      padding-bottom: 16px;
+    }
+
+    /* ── DISCLAIMER ── */
+    .disclaimer-section {
+      background: #080808 !important;
+      padding: 24px 20px !important;
+      border-top: 2px solid #1a1a1a;
+    }
+
+    .disclaimer-title {
+      font-size: 10px;
+      font-weight: 800;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .disclaimer-text {
+      font-size: 10px;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    /* ── STICKY CTA ── */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: var(--max);
+      background: var(--yellow);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 999;
+      box-shadow: 0 -4px 20px rgba(255, 214, 0, 0.3);
+    }
+
+    .sticky-text {
+      font-size: 16px;
+      color: var(--black);
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .sticky-btn {
+      background: var(--black);
+      color: var(--yellow);
+      padding: 10px 20px;
+      font-family: 'Noto Sans Devanagari', serif;
+      font-size: 16px;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: #222;
+    }
+
+    .divider-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--yellow);
+      transform: rotate(45deg);
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-up {
+      animation: fadeUp 0.6s ease forwards;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- STICKY BAR -->
-<div class="sticky-bar">
-  <div class="sticky-text">🎁 Free Delivery + 10% OFF<br>Limited Stock!</div>
-  <a href="#order" class="sticky-btn">अभी Order करें</a>
-</div>
-
-<!-- ═══════════ SECTION 1: HERO ═══════════ -->
-<div class="hero">
-  <div class="hero-top-strip">⚠️ अभी 10% OFF + FREE Delivery – Limited Time Offer!</div>
-
-  <div class="hero-badge">Ayurvedic Formula</div>
-
-  <h1 class="hero-headline">
-    क्या आपके बच्चे के सिर में <span>गोल-गोल गंजे पैच</span> बन रहे हैं?
-  </h1>
-
-  <p class="hero-sub">
-    क्या आपने देखा कि आपके बच्चे के सिर में अचानक एक जगह से बाल गायब होने लगे हैं? यह <strong style="color:var(--yellow)">Alopecia Areata</strong> हो सकता है — लेकिन सही herbal care से सुधार संभव है।
-  </p>
-
-  <div class="hero-image-wrap">
-    <picture>
-      <source srcset="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80&fm=webp" type="image/webp">
-      <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80" alt="बच्चे के बाल" width="500" height="220" fetchpriority="high">
-    </picture>
-    <div class="hero-image-label">Alopecia Areata – बच्चों में</div>
+  <!-- STICKY BAR -->
+  <div class="sticky-bar">
+    <div class="sticky-text">🎁 Free Delivery + 10% OFF<br>Limited Stock!</div>
+    <a href="#order" class="sticky-btn">अभी Order करें</a>
   </div>
 
-  <div class="pain-cards">
-    <div class="pain-card">
+  <!-- ═══════════ SECTION 1: HERO ═══════════ -->
+  <div class="hero">
+    <div class="hero-top-strip">⚠️ अभी 10% OFF + FREE Delivery – Limited Time Offer!</div>
+
+    <div class="hero-badge">Ayurvedic Formula</div>
+
+    <h1 class="hero-headline">
+      क्या आपके बच्चे के सिर में <span>गोल-गोल गंजे पैच</span> बन रहे हैं?
+    </h1>
+
+    <div class="hero-image-wrap">
       <picture>
-        <source srcset="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=200&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=200&q=80" alt="गंजे पैच" class="pain-card-img" width="200" height="70" loading="lazy">
+        <source srcset="./Image/hook.png" type="image/webp">
+        <img src="./Image/hook.png" alt="बच्चे के बाल" width="500"
+          height="220" fetchpriority="high">
       </picture>
-      <div class="pain-card-text">❌ सिर में गोल गंजे पैच</div>
+      <div class="hero-image-label">Alopecia Areata – बच्चों में</div>
     </div>
-    <div class="pain-card">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80" alt="बाल झड़ना" class="pain-card-img" width="200" height="70" loading="lazy">
-      </picture>
-      <div class="pain-card-text">❌ बालों का अचानक झड़ना</div>
-    </div>
-    <div class="pain-card">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&q=80" alt="आत्मविश्वास" class="pain-card-img" width="200" height="70" loading="lazy">
-      </picture>
-      <div class="pain-card-text">❌ बच्चे का आत्मविश्वास कम होना</div>
-    </div>
-    <div class="pain-card">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=200&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=200&q=80" alt="स्कूल" class="pain-card-img" width="200" height="70" loading="lazy">
-      </picture>
-      <div class="pain-card-text">❌ स्कूल में मज़ाक का डर</div>
-    </div>
-  </div>
 
-  <a href="#order" class="hero-cta">👉 अभी Order करें – FREE Delivery पाएँ</a>
-</div>
+       <p class="hero-sub">
+      क्या आपने देखा कि आपके बच्चे के सिर में अचानक एक जगह से बाल गायब होने लगे हैं? यह <strong
+        style="color:var(--yellow)">Alopecia Areata</strong> हो सकता है — लेकिन सही herbal care से सुधार संभव है।
+    </p>
 
-<!-- ═══════════ SECTION 2: PRODUCT ═══════════ -->
-<section>
-  <div class="sec-label">Our Solution</div>
-  <h2 class="sec-title">बच्चों के बालों की जड़ों को <span class="yellow">पोषण देने</span> में मदद करे</h2>
-  <p class="sec-desc">एक खास Ayurvedic Herbal Formula जो scalp को पोषण देकर hair follicles को support करने में मदद करता है।</p>
-
-  <picture>
-    <source srcset="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80&fm=webp" type="image/webp">
-    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80" alt="Alopecia Herbal Care Product" class="product-hero-img" width="500" height="200" loading="lazy">
-  </picture>
-
-  <div class="benefit-item">
-    <picture>
-      <source srcset="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=100&q=80&fm=webp" type="image/webp">
-      <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=100&q=80" alt="जड़ें मजबूत" width="64" height="64" loading="lazy">
-    </picture>
-    <div class="benefit-item-content">
-      <span class="benefit-check">✔ बालों की जड़ें मजबूत</span>
-      <p class="benefit-text">Natural herbs से बालों की जड़ों को deep nourishment मिलती है, जिससे वे अंदर से मजबूत बनती हैं।</p>
-    </div>
-  </div>
-
-  <div class="benefit-item">
-    <picture>
-      <source srcset="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=100&q=80&fm=webp" type="image/webp">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=100&q=80" alt="Hair Growth" width="64" height="64" loading="lazy">
-    </picture>
-    <div class="benefit-item-content">
-      <span class="benefit-check">✔ Patch area में hair growth support</span>
-      <p class="benefit-text">गंजे patch वाली जगह पर नए बालों की growth को support करता है।</p>
-    </div>
-  </div>
-
-  <div class="benefit-item">
-    <picture>
-      <source srcset="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=100&q=80&fm=webp" type="image/webp">
-      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=100&q=80" alt="बालों का झड़ना कम" width="64" height="64" loading="lazy">
-    </picture>
-    <div class="benefit-item-content">
-      <span class="benefit-check">✔ बालों का झड़ना कम</span>
-      <p class="benefit-text">Regular use से hair fall को कम करने में सहायक। Scalp को healthy रखता है।</p>
-    </div>
-  </div>
-
-  <div class="benefit-item">
-    <picture>
-      <source srcset="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=100&q=80&fm=webp" type="image/webp">
-      <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=100&q=80" alt="Gentle Care" width="64" height="64" loading="lazy">
-    </picture>
-    <div class="benefit-item-content">
-      <span class="benefit-check">✔ बच्चों के scalp के लिए gentle</span>
-      <p class="benefit-text">Chemical-free Ayurvedic formula, बच्चों की sensitive scalp के लिए पूरी तरह safe.</p>
-    </div>
-  </div>
-
-  <a href="#order" class="hero-cta" style="display:block;text-align:center;text-decoration:none;margin:20px 0 0;">अभी Order करें 🎁 Free Delivery</a>
-</section>
-
-<!-- ═══════════ SECTION 3: BEFORE & AFTER ═══════════ -->
-<section>
-  <div class="sec-label">Real Results</div>
-  <h2 class="sec-title">Before &amp; After <span class="yellow">(परिणाम का अंतर)</span></h2>
-  <p class="sec-desc">नियमित Alopecia Herbal Care के उपयोग से असली फर्क देखें।</p>
-
-  <div class="ba-container">
-    <div class="ba-side ba-before">
-      <div class="ba-label">पहले (Before)</div>
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=250&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=250&q=80" alt="Before Treatment" width="250" height="200" loading="lazy">
-      </picture>
-    </div>
-    <div class="ba-side ba-after">
-      <div class="ba-label">बाद में (After)</div>
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=250&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=250&q=80" alt="After Treatment" width="250" height="200" loading="lazy">
-      </picture>
-    </div>
-  </div>
-
-  <div class="ba-points">
-    <div class="ba-point-box before">
-      <div class="ba-point-title">पहले</div>
-      <ul class="ba-point-list">
-        <li>गोल गंजे पैच</li>
-        <li>तेज़ी से बाल झड़ना</li>
-        <li>scalp कमजोर</li>
-        <li>parents में चिंता</li>
-      </ul>
-    </div>
-    <div class="ba-point-box after">
-      <div class="ba-point-title">Care के बाद</div>
-      <ul class="ba-point-list">
-        <li>नए बाल दिखना</li>
-        <li>जड़ें मजबूत</li>
-        <li>scalp healthy</li>
-        <li>बच्चे का confidence</li>
-      </ul>
-    </div>
-  </div>
-
-  <p class="disclaimer-small">* परिणाम व्यक्ति-व्यक्ति में अलग हो सकते हैं।</p>
-</section>
-
-<!-- ═══════════ SECTION 4: DOCTOR ═══════════ -->
-<section>
-  <div class="sec-label">Expert Backed</div>
-  <h2 class="sec-title"><span class="yellow">Doctor Recommended</span> Ayurvedic Care</h2>
-  <p class="sec-desc">बालों की patch problem में scalp को सही पोषण देना बहुत जरूरी होता है।</p>
-
-  <div class="doctor-card">
-    <picture>
-      <source srcset="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80&fm=webp" type="image/webp">
-      <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Ayurvedic Doctor" class="doctor-img" width="500" height="300" loading="lazy">
-    </picture>
-    <p class="doctor-text">"कई आयुर्वेद विशेषज्ञों के अनुसार natural herbal ingredients scalp health को बेहतर बनाने में सहायक हो सकते हैं और hair follicles को support कर सकते हैं। Alopecia Herbal Care इसी सोच के साथ तैयार किया गया है।"</p>
-  </div>
-
-  <div class="cert-badges">
-    <div class="cert-badge">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=80&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=80&q=80" alt="Ayurvedic" width="80" height="80" loading="lazy">
-      </picture>
-      <div class="cert-badge-text">Ayurvedic Herbs Based Formula</div>
-    </div>
-    <div class="cert-badge">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=80&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=80&q=80" alt="Chemical Free" width="80" height="80" loading="lazy">
-      </picture>
-      <div class="cert-badge-text">100% Chemical Free Care</div>
-    </div>
-    <div class="cert-badge">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=80&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=80&q=80" alt="GMP" width="80" height="80" loading="lazy">
-      </picture>
-      <div class="cert-badge-text">GMP Certified Manufacturing</div>
-    </div>
-    <div class="cert-badge">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?w=80&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?w=80&q=80" alt="Gentle" width="80" height="80" loading="lazy">
-      </picture>
-      <div class="cert-badge-text">बच्चों के लिए Gentle Safe</div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ SECTION 5: WHO IS IT FOR ═══════════ -->
-<section>
-  <div class="sec-label">For Your Child</div>
-  <h2 class="sec-title">किन बच्चों के लिए <span class="yellow">उपयोगी</span> है?</h2>
-  <p class="sec-desc">अगर आपके बच्चे में ये लक्षण हैं तो Alopecia Herbal Care मददगार हो सकता है:</p>
-
-  <div class="symptom-grid">
-    <div class="symptom-card">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=200&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=200&q=80" alt="गंजे पैच" width="200" height="150" loading="lazy">
-      </picture>
-      <div class="symptom-card-body">
-        <p>🔸 सिर में गोल-गोल गंजे पैच</p>
-      </div>
-    </div>
-    <div class="symptom-card">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=200&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=200&q=80" alt="बाल गिरना" width="200" height="150" loading="lazy">
-      </picture>
-      <div class="symptom-card-body">
-        <p>🔸 बालों का अचानक गिरना</p>
-      </div>
-    </div>
-    <div class="symptom-card">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=200&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=200&q=80" alt="पतले बाल" width="200" height="150" loading="lazy">
-      </picture>
-      <div class="symptom-card-body">
-        <p>🔸 बाल पतले और कमजोर होना</p>
-      </div>
-    </div>
-    <div class="symptom-card">
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=200&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=200&q=80" alt="बार-बार बाल झड़ना" width="200" height="150" loading="lazy">
-      </picture>
-      <div class="symptom-card-body">
-        <p>🔸 एक ही जगह से बार-बार बाल झड़ना</p>
-      </div>
-    </div>
-  </div>
-
-  <a href="#order" class="hero-cta" style="display:block;text-align:center;text-decoration:none;margin-top:20px;">👉 अभी Free Delivery के साथ Order करें</a>
-</section>
-
-<!-- ═══════════ SECTION 6: HOW TO USE ═══════════ -->
-<section>
-  <div class="sec-label">Easy To Use</div>
-  <h2 class="sec-title">इस्तेमाल <span class="yellow">कैसे करें?</span></h2>
-  <p class="sec-desc">सिर्फ 3 आसान steps में शुरू करें अपने बच्चे की hair care:</p>
-
-  <div class="steps-wrap">
-    <div class="step-item">
-      <div class="step-num">1</div>
-      <div class="step-content">
-        <div class="step-title">रोजाना scalp पर लगाएँ</div>
-        <p class="step-desc">बताए गए तरीके से रोज़ाना बच्चे के scalp पर Alopecia Herbal Care लगाएँ।</p>
+    <div class="pain-cards">
+      <div class="pain-card">
         <picture>
-          <source srcset="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80&fm=webp" type="image/webp">
-          <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80" alt="Apply on Scalp" class="step-img" width="400" height="250" loading="lazy">
+          <source srcset="./Image/hook1.png"
+            type="image/webp">
+          <img src="./Image/hook1.png" alt="गंजे पैच"
+            class="pain-card-img" width="200" height="70" loading="lazy">
+        </picture>
+        <div class="pain-card-text">❌ सिर में गोल गंजे पैच</div>
+      </div>
+      <div class="pain-card">
+        <picture>
+          <source srcset="./Image/hook2.png"
+            type="image/webp">
+          <img src="./Image/hook2.png" alt="बाल झड़ना"
+            class="pain-card-img" width="200" height="70" loading="lazy">
+        </picture>
+        <div class="pain-card-text">❌ बालों का अचानक झड़ना</div>
+      </div>
+      <div class="pain-card">
+        <picture>
+          <source srcset="./Image/hook3.png"
+            type="image/webp">
+          <img src="./Image/hook3.png" alt="आत्मविश्वास"
+            class="pain-card-img" width="200" height="70" loading="lazy">
+        </picture>
+        <div class="pain-card-text">❌ बच्चे का आत्मविश्वास कम होना</div>
+      </div>
+      <div class="pain-card">
+        <picture>
+          <source srcset="./Image/hook4.png"
+            type="image/webp">
+          <img src="./Image/hook4.png" alt="स्कूल"
+            class="pain-card-img" width="200" height="70" loading="lazy">
+        </picture>
+        <div class="pain-card-text">❌ स्कूल में मज़ाक का डर</div>
+      </div>
+    </div>
+
+    <!-- <a href="#order" class="hero-cta">👉 अभी Order करें – FREE Delivery पाएँ</a> -->
+  </div>
+
+  <!-- ═══════════ SECTION 2: PRODUCT ═══════════ -->
+  <section>
+    <div class="sec-label">Our Solution</div>
+    <h2 class="sec-title">बच्चों के बालों की जड़ों को <span class="yellow">पोषण देने</span> में मदद करे</h2>
+    <p class="sec-desc">एक खास Ayurvedic Herbal Formula जो scalp को पोषण देकर hair follicles को support करने में मदद
+      करता है।</p>
+
+    <picture>
+      <source srcset="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80&fm=webp"
+        type="image/webp">
+      <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80"
+        alt="Alopecia Herbal Care Product" class="product-hero-img" width="500" height="200" loading="lazy">
+    </picture>
+
+    <div class="benefit-item">
+      <picture>
+        <source srcset="./Image/improve1.png"
+          type="image/webp">
+        <img src="./Image/improve1.png" alt="जड़ें मजबूत" width="64"
+          height="64" loading="lazy">
+      </picture>
+      <div class="benefit-item-content">
+        <span class="benefit-check">✔ बालों की जड़ें मजबूत</span>
+        <p class="benefit-text">Natural herbs से बालों की जड़ों को deep nourishment मिलती है, जिससे वे अंदर से मजबूत
+          बनती हैं।</p>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <picture>
+        <source srcset="./Image/improve2.png" type="image/webp">
+        <img src="./Image/improve2.png" alt="Hair Growth" width="64"
+          height="64" loading="lazy">
+      </picture>
+      <div class="benefit-item-content">
+        <span class="benefit-check">✔ Patch area में hair growth support</span>
+        <p class="benefit-text">गंजे patch वाली जगह पर नए बालों की growth को support करता है।</p>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <picture>
+        <source srcset="./Image/improve3.png"
+          type="image/webp">
+        <img src="./Image/improve3.png" alt="बालों का झड़ना कम"
+          width="64" height="64" loading="lazy">
+      </picture>
+      <div class="benefit-item-content">
+        <span class="benefit-check">✔ बालों का झड़ना कम</span>
+        <p class="benefit-text">Regular use से hair fall को कम करने में सहायक। Scalp को healthy रखता है।</p>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <picture>
+        <source srcset="./Image/improve4.png"
+          type="image/webp">
+        <img src="./Image/improve4.png" alt="Gentle Care" width="64"
+          height="64" loading="lazy">
+      </picture>
+      <div class="benefit-item-content">
+        <span class="benefit-check">✔ बच्चों के scalp के लिए gentle</span>
+        <p class="benefit-text">Chemical-free Ayurvedic formula, बच्चों की sensitive scalp के लिए पूरी तरह safe.</p>
+      </div>
+    </div>
+
+    <a href="#order" class="hero-cta" style="display:block;text-align:center;text-decoration:none;margin:20px 0 0;">अभी
+      Order करें 🎁 Free Delivery</a>
+  </section>
+
+  <!-- ═══════════ SECTION 3: BEFORE & AFTER ═══════════ -->
+  <section>
+    <div class="sec-label">Real Results</div>
+    <h2 class="sec-title">Before &amp; After <span class="yellow">(परिणाम का अंतर)</span></h2>
+    <p class="sec-desc">नियमित Alopecia Herbal Care के उपयोग से असली फर्क देखें।</p>
+
+    <div class="ba-container">
+      <div class="ba-side ba-before">
+        <div class="ba-label">पहले (Before)</div>
+        <picture>
+          <source srcset="./Image/befor.png"
+            type="image/webp">
+          <img src="./Image/befor.png" alt="Before Treatment"
+            width="250" height="200" loading="lazy">
+        </picture>
+      </div>
+      <div class="ba-side ba-after">
+        <div class="ba-label">बाद में (After)</div>
+        <picture>
+          <source srcset="./Image/after.png"
+            type="image/webp">
+          <img src="./Image/after.png" alt="After Treatment"
+            width="250" height="200" loading="lazy">
         </picture>
       </div>
     </div>
 
-    <div class="step-item">
-      <div class="step-num">2</div>
-      <div class="step-content">
-        <div class="step-title">2–3 महीने नियमित उपयोग करें</div>
-        <p class="step-desc">Best results के लिए कम से कम 2–3 महीने नियमित रूप से उपयोग करते रहें।</p>
-        <picture>
-          <source srcset="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&q=80&fm=webp" type="image/webp">
-          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&q=80" alt="Regular Use" class="step-img" width="400" height="250" loading="lazy">
-        </picture>
+    <div class="ba-points">
+      <div class="ba-point-box before">
+        <div class="ba-point-title">पहले</div>
+        <ul class="ba-point-list">
+          <li>गोल गंजे पैच</li>
+          <li>तेज़ी से बाल झड़ना</li>
+          <li>scalp कमजोर</li>
+          <li>parents में चिंता</li>
+        </ul>
+      </div>
+      <div class="ba-point-box after">
+        <div class="ba-point-title">Care के बाद</div>
+        <ul class="ba-point-list">
+          <li>नए बाल दिखना</li>
+          <li>जड़ें मजबूत</li>
+          <li>scalp healthy</li>
+          <li>बच्चे का confidence</li>
+        </ul>
       </div>
     </div>
 
-    <div class="step-item">
-      <div class="step-num">3</div>
-      <div class="step-content">
-        <div class="step-title">Hair care routine follow करें</div>
-        <p class="step-desc">बेहतर परिणाम के लिए हमारा FREE Hair Care Diet Chart follow करें जो साथ में मिलेगा।</p>
+    <p class="disclaimer-small">* परिणाम व्यक्ति-व्यक्ति में अलग हो सकते हैं।</p>
+  </section>
+
+  <!-- ═══════════ SECTION 4: DOCTOR ═══════════ -->
+  <section>
+    <div class="sec-label">Expert Backed</div>
+    <h2 class="sec-title"><span class="yellow">Doctor Recommended</span> Ayurvedic Care</h2>
+    <p class="sec-desc">बालों की patch problem में scalp को सही पोषण देना बहुत जरूरी होता है।</p>
+
+    <div class="doctor-card">
+      <picture>
+        <source srcset="./Image/doctor.png"
+          type="image/webp">
+        <img src="./Image/doctor.png" alt="Ayurvedic Doctor"
+          class="doctor-img" width="500" height="300" loading="lazy">
+      </picture>
+      <p class="doctor-text">"कई आयुर्वेद विशेषज्ञों के अनुसार natural herbal ingredients scalp health को बेहतर बनाने
+        में सहायक हो सकते हैं और hair follicles को support कर सकते हैं। Alopecia Herbal Care इसी सोच के साथ तैयार किया
+        गया है।"</p>
+    </div>
+
+    <div class="cert-badges">
+      <div class="cert-badge">
         <picture>
-          <source srcset="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80&fm=webp" type="image/webp">
-          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt="Diet Chart" class="step-img" width="400" height="250" loading="lazy">
+          <source srcset="./Image/trust1.png"
+            type="image/webp">
+          <img src="./Image/trust1.png" alt="Ayurvedic" width="80"
+            height="80" loading="lazy">
         </picture>
+        <div class="cert-badge-text">Ayurvedic Herbs Based Formula</div>
+      </div>
+      <div class="cert-badge">
+        <picture>
+          <source srcset="./Image/trust2.png"
+            type="image/webp">
+          <img src="./Image/trust2.png" alt="Chemical Free"
+            width="80" height="80" loading="lazy">
+        </picture>
+        <div class="cert-badge-text">100% Chemical Free Care</div>
+      </div>
+      <div class="cert-badge">
+        <picture>
+          <source srcset="./Image/trust3.png"
+            type="image/webp">
+          <img src="./Image/trust3.png" alt="GMP" width="80"
+            height="80" loading="lazy">
+        </picture>
+        <div class="cert-badge-text">GMP Certified Manufacturing</div>
+      </div>
+      <div class="cert-badge">
+        <picture>
+          <source srcset="./Image/trust4.png"
+            type="image/webp">
+          <img src="./Image/trust4.png" alt="Gentle" width="80"
+            height="80" loading="lazy">
+        </picture>
+        <div class="cert-badge-text">बच्चों के लिए Gentle Safe</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════════ SECTION 7: REVIEWS ═══════════ -->
-<section>
-  <div class="sec-label">Real Stories</div>
-  <h2 class="sec-title">⭐ Customers <span class="yellow">Experience</span></h2>
-  <p class="sec-desc">हज़ारों parents ने अपने बच्चों के लिए Alopecia Herbal Care को choose किया है।</p>
+  <!-- ═══════════ SECTION 5: WHO IS IT FOR ═══════════ -->
+  <section>
+    <div class="sec-label">For Your Child</div>
+    <h2 class="sec-title">किन बच्चों के लिए <span class="yellow">उपयोगी</span> है?</h2>
+    <p class="sec-desc">अगर आपके बच्चे में ये लक्षण हैं तो Alopecia Herbal Care मददगार हो सकता है:</p>
 
-  <div class="review-grid">
-    <div class="review-card">
-      <div class="review-header">
+    <div class="symptom-grid">
+      <div class="symptom-card">
         <picture>
-          <source srcset="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80&fm=webp" type="image/webp">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Priya" class="review-avatar" width="100" height="100" loading="lazy">
+          <source srcset="./Image/how1.png"
+            type="image/webp">
+          <img src="./Image/how1.png" alt="गंजे पैच" width="200"
+            height="150" class="review-img" loading="lazy">
         </picture>
-        <div class="reviewer-info">
-          <div class="reviewer-name">प्रिया शर्मा</div>
-          <div class="reviewer-loc">📍 जयपुर, राजस्थान</div>
+        <div class="symptom-card-body">
+          <p>🔸 सिर में गोल-गोल गंजे पैच</p>
         </div>
       </div>
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"मेरे बेटे के सिर में 3-4 जगह गंजे पैच हो गए थे। 2 महीने के उपयोग के बाद छोटे-छोटे नए बाल दिखने लगे हैं। बहुत खुश हूँ।"</p>
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=400&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=400&q=80" alt="Result" class="review-img" width="400" height="250" loading="lazy">
-      </picture>
-      <span class="review-badge">✔ Verified Purchase</span>
-    </div>
-
-    <div class="review-card">
-      <div class="review-header">
+      <div class="symptom-card">
         <picture>
-          <source srcset="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80&fm=webp" type="image/webp">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Rakesh" class="review-avatar" width="100" height="100" loading="lazy">
+          <source srcset="./Image/how2.png"
+            type="image/webp">
+          <img src="./Image/how2.png" alt="बाल गिरना" width="200"
+            height="150" class="review-img" loading="lazy">
         </picture>
-        <div class="reviewer-info">
-          <div class="reviewer-name">राकेश वर्मा</div>
-          <div class="reviewer-loc">📍 दिल्ली, NCR</div>
+        <div class="symptom-card-body">
+          <p>🔸 बालों का अचानक गिरना</p>
         </div>
       </div>
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"बेटी का confidence बिल्कुल कम हो गया था। Alopecia Herbal Care शुरू किया, अब scalp healthy लग रही है और बाल कम झड़ रहे हैं।"</p>
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80" alt="Result" class="review-img" width="400" height="250" loading="lazy">
-      </picture>
-      <span class="review-badge">✔ Verified Purchase</span>
-    </div>
-
-    <div class="review-card">
-      <div class="review-header">
+      <div class="symptom-card">
         <picture>
-          <source srcset="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80&fm=webp" type="image/webp">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sunita" class="review-avatar" width="100" height="100" loading="lazy">
+          <source srcset="./Image/how3.png"
+            type="image/webp">
+          <img src="./Image/how3.png" alt="पतले बाल" width="200"
+            height="150" class="review-img" loading="lazy">
         </picture>
-        <div class="reviewer-info">
-          <div class="reviewer-name">सुनीता पटेल</div>
-          <div class="reviewer-loc">📍 अहमदाबाद, गुजरात</div>
+        <div class="symptom-card-body">
+          <p>🔸 बाल पतले और कमजोर होना</p>
         </div>
       </div>
-      <div class="review-stars">★★★★☆</div>
-      <p class="review-text">"Chemical-free होने की वजह से मुझे बच्चे पर use करने में कोई डर नहीं था। Free diet chart बहुत helpful है। पूरे परिवार को recommend करूँगी।"</p>
-      <picture>
-        <source srcset="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&q=80&fm=webp" type="image/webp">
-        <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&q=80" alt="Result" class="review-img" width="400" height="250" loading="lazy">
-      </picture>
-      <span class="review-badge">✔ Verified Purchase</span>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ SECTION 8: OFFER ═══════════ -->
-<section class="offer-section">
-  <h2 class="offer-title">🎁 Limited Time Offer</h2>
-  <p class="offer-sub">आज ही order करें और पाएँ ये exclusive benefits:</p>
-
-  <picture>
-    <source srcset="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=500&q=80&fm=webp" type="image/webp">
-    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=500&q=80" alt="Special Offer" class="offer-img" width="500" height="300" loading="lazy">
-  </picture>
-
-  <div class="discount-badge">
-    <span>आज सिर्फ</span> 10% OFF <span>पाएँ</span>
-  </div>
-
-  <div class="offer-cards">
-    <div class="offer-card">
-      <span class="offer-card-icon">🚚</span>
-      <div class="offer-card-label">FREE Delivery</div>
-      <div class="offer-card-val">घर तक मुफ्त</div>
-    </div>
-    <div class="offer-card">
-      <span class="offer-card-icon">🥗</span>
-      <div class="offer-card-label">FREE Diet Chart</div>
-      <div class="offer-card-val">Hair Care Guide</div>
-    </div>
-    <div class="offer-card">
-      <span class="offer-card-icon">💳</span>
-      <div class="offer-card-label">Cash on Delivery</div>
-      <div class="offer-card-val">COD Available</div>
-    </div>
-    <div class="offer-card">
-      <span class="offer-card-icon">🔖</span>
-      <div class="offer-card-label">10% Discount</div>
-      <div class="offer-card-val">Today Only</div>
-    </div>
-  </div>
-
-  <a href="#order" style="display:block;background:var(--black);color:var(--yellow);padding:16px;text-align:center;font-family:'Noto Sans Devanagari',serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:0.5px;position:relative;z-index:1;">
-    👉 अभी Claim करें – Stock Limited!
-  </a>
-</section>
-
-<!-- ═══════════ SECTION 9: ORDER FORM ═══════════ -->
-<section class="order-section" id="order">
-  <div class="sec-label">Order Now</div>
-  <h2 class="order-title">अपने बच्चे के बालों की देखभाल <span>आज से शुरू करें</span></h2>
-  <p class="order-desc">📝 नीचे Name और Mobile Number भरें। हमारी टीम आपसे कॉल करके आपका ऑर्डर कन्फर्म कर देगी।<br><br>👉 जितनी जल्दी care शुरू करेंगे, उतना जल्दी बालों को support मिल सकता है।</p>
-
-  <div class="form-wrap">
-    <div class="form-group">
-      <label class="form-label">आपका नाम (Name)</label>
-      <input type="text" class="form-input" placeholder="जैसे: राम कुमार">
-    </div>
-    <div class="form-group">
-      <label class="form-label">मोबाइल नंबर (Mobile)</label>
-      <input type="tel" class="form-input" placeholder="10 अंक का नंबर">
-    </div>
-    <div class="form-group">
-      <label class="form-label">शहर (City)</label>
-      <input type="text" class="form-input" placeholder="जैसे: जयपुर">
-    </div>
-    <button class="submit-btn">✅ Order Confirm करें – FREE Delivery पाएँ</button>
-  </div>
-
-  <div class="trust-row">
-    <div class="trust-item"><span>🔒</span><span>Secure</span></div>
-    <div class="trust-item"><span>💳</span><span>Cash on Delivery</span></div>
-    <div class="trust-item"><span>🚚</span><span>Free Shipping</span></div>
-  </div>
-</section>
-
-<!-- ═══════════ SECTION 10: FAQ ═══════════ -->
-<section>
-  <div class="sec-label">Help</div>
-  <h2 class="sec-title">❓ <span class="yellow">FAQs</span> – अक्सर पूछे जाने वाले सवाल</h2>
-
-  <div class="faq-list">
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">Alopecia Herbal Care क्या है?</span>
-        <span class="faq-icon">+</span>
+      <div class="symptom-card">
+        <picture>
+          <source srcset="./Image/how4.png"
+            type="image/webp">
+          <img src="./Image/how4.png" alt="बार-बार बाल झड़ना"
+            width="200" class="review-img" height="150" loading="lazy">
+        </picture>
+        <div class="symptom-card-body">
+          <p>🔸 एक ही जगह से बार-बार बाल झड़ना</p>
+        </div>
       </div>
-      <div class="faq-a">यह एक Ayurvedic Herbal Formula है जो बच्चों के scalp को पोषण देकर hair follicles को support करता है। यह chemical-free और GMP certified है।</div>
     </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">परिणाम दिखने में कितना समय लगता है?</span>
-        <span class="faq-icon">+</span>
+
+    <a href="#order" class="hero-cta" style="display:block;text-align:center;text-decoration:none;margin-top:20px;">👉
+      अभी Free Delivery के साथ Order करें</a>
+  </section>
+
+  <!-- ═══════════ SECTION 6: HOW TO USE ═══════════ -->
+  <section>
+    <div class="sec-label">Easy To Use</div>
+    <h2 class="sec-title">इस्तेमाल <span class="yellow">कैसे करें?</span></h2>
+    <p class="sec-desc">सिर्फ 3 आसान steps में शुरू करें अपने बच्चे की hair care:</p>
+
+    <div class="steps-wrap">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">रोजाना scalp पर लगाएँ</div>
+          <p class="step-desc">बताए गए तरीके से रोज़ाना बच्चे के scalp पर Alopecia Herbal Care लगाएँ।</p>
+          <picture>
+            <source srcset="./Image/step1.png"
+              type="image/webp">
+            <img src="./Image/step1.png" alt="Apply on Scalp"
+              class="step-img" width="400" height="250" loading="lazy">
+          </picture>
+        </div>
       </div>
-      <div class="faq-a">हर बच्चे की scalp अलग होती है। आमतौर पर नियमित उपयोग से 2–3 महीने में असर दिखने लगता है। परिणाम व्यक्ति-व्यक्ति में अलग हो सकते हैं।</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">क्या यह बच्चों के लिए safe है?</span>
-        <span class="faq-icon">+</span>
+
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">2–3 महीने नियमित उपयोग करें</div>
+          <p class="step-desc">Best results के लिए कम से कम 2–3 महीने नियमित रूप से उपयोग करते रहें।</p>
+          <picture>
+            <source srcset="./Image/step2.png"
+              type="image/webp">
+            <img src="./Image/step2.png" alt="Regular Use"
+              class="step-img" width="400" height="250" loading="lazy">
+          </picture>
+        </div>
       </div>
-      <div class="faq-a">हाँ, यह 100% chemical-free Ayurvedic formula है जो बच्चों की sensitive scalp के लिए gentle है। फिर भी उपयोग से पहले एक बार doctor से सलाह लें।</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">Cash on Delivery available है क्या?</span>
-        <span class="faq-icon">+</span>
+
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Hair care routine follow करें</div>
+          <p class="step-desc">बेहतर परिणाम के लिए हमारा FREE Hair Care Diet Chart follow करें जो साथ में मिलेगा।</p>
+          <picture>
+            <source srcset="./Image/step3.png"
+              type="image/webp">
+            <img src="./Image/step3.png" alt="Diet Chart"
+              class="step-img" width="400" height="250" loading="lazy">
+          </picture>
+        </div>
       </div>
-      <div class="faq-a">जी हाँ, Cash on Delivery (COD) की सुविधा उपलब्ध है। आपको order deliver होने पर ही payment करनी होगी।</div>
     </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">Delivery में कितने दिन लगेंगे?</span>
-        <span class="faq-icon">+</span>
+  </section>
+
+  <!-- ═══════════ SECTION 8: OFFER ═══════════ -->
+  <section class="offer-section">
+    <h2 class="offer-title">🎁 Limited Time Offer</h2>
+    <p class="offer-sub">आज ही order करें और पाएँ ये exclusive benefits:</p>
+
+    <picture>
+      <source srcset="./Image/order.png" type="image/webp">
+      <img src="./Image/order.png" alt="Special Offer"
+        class="offer-img" width="500" height="350" loading="lazy">
+    </picture>
+
+    <div class="discount-badge">
+      <span>आज सिर्फ</span> 10% OFF <span>पाएँ</span>
+    </div>
+
+    <div class="offer-cards">
+      <div class="offer-card">
+        <span class="offer-card-icon">🚚</span>
+        <div class="offer-card-label">FREE Delivery</div>
+        <div class="offer-card-val">घर तक मुफ्त</div>
       </div>
-      <div class="faq-a">सामान्यतः 3–7 business days में delivery हो जाती है। आपका order confirm होने के बाद tracking details दी जाएगी।</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">10% discount कैसे मिलेगा?</span>
-        <span class="faq-icon">+</span>
+      <div class="offer-card">
+        <span class="offer-card-icon">🥗</span>
+        <div class="offer-card-label">FREE Diet Chart</div>
+        <div class="offer-card-val">Hair Care Guide</div>
       </div>
-      <div class="faq-a">ऊपर दिया गया form भरें। हमारी team call करके order confirm करने पर आपको automatic 10% discount apply किया जाएगा। यह limited time offer है।</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">क्या Free Hair Care Diet Chart मिलेगा?</span>
-        <span class="faq-icon">+</span>
+      <div class="offer-card">
+        <span class="offer-card-icon">💳</span>
+        <div class="offer-card-label">Cash on Delivery</div>
+        <div class="offer-card-val">COD Available</div>
       </div>
-      <div class="faq-a">हाँ! हर order के साथ FREE Hair Care Diet Chart दिया जाता है जो बच्चों के बालों की care के लिए बहुत helpful है।</div>
+      <div class="offer-card">
+        <span class="offer-card-icon">🔖</span>
+        <div class="offer-card-label">10% Discount</div>
+        <div class="offer-card-val">Today Only</div>
+      </div>
     </div>
-  </div>
-</section>
 
-<!-- ═══════════ DISCLAIMER ═══════════ -->
-<section class="disclaimer-section">
-  <div class="disclaimer-title">⚠️ Disclaimer / अस्वीकरण</div>
-  <p class="disclaimer-text">
-    यह उत्पाद Ayurvedic Herbal Care formula है और इसे किसी बीमारी के उपचार, निदान, या इलाज के रूप में प्रस्तुत नहीं किया गया है। बताए गए परिणाम व्यक्ति-व्यक्ति में भिन्न हो सकते हैं। Before & After images illustrative हैं। उपयोग से पहले qualified Ayurvedic doctor या healthcare professional से परामर्श लें। बच्चे को कोई भी herbal product देने से पहले doctor की सलाह अवश्य लें। यह product FSSAI / Ayush guidelines के अनुसार manufactured है।
-  </p>
-</section>
+    <a href="#order"
+      style="display:block;background:var(--black);color:var(--yellow);padding:16px;text-align:center;font-family:'Noto Sans Devanagari',serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:0.5px;position:relative;z-index:1;">
+      👉 अभी Claim करें – Stock Limited!
+    </a>
+  </section>
 
-<!-- Bottom padding for sticky bar -->
-<div style="height:60px"></div>
+  <!-- ═══════════ SECTION 9: ORDER FORM ═══════════ -->
 
-<script>
-function toggleFaq(el) {
-  const item = el.closest('.faq-item');
-  const allItems = document.querySelectorAll('.faq-item');
-  allItems.forEach(i => {
-    if(i !== item) i.classList.remove('open');
-  });
-  item.classList.toggle('open');
-}
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      @keyframes formPulse {
 
-// Smooth scroll for all anchor links
-document.querySelectorAll('a[href="#order"]').forEach(a => {
-  a.addEventListener('click', e => {
-    e.preventDefault();
-    document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
-  });
-});
+        0%,
+        100% {
+          opacity: 1;
+        }
 
-// Intersection Observer for fade-up animations
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if(e.isIntersecting) {
-      e.target.style.opacity = '1';
-      e.target.style.transform = 'translateY(0)';
-    }
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.benefit-item, .review-card, .symptom-card, .step-item, .cert-badge').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-  observer.observe(el);
-});
-
-// Enhanced lazy loading for images with intersection observer
-const imageObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const img = entry.target;
-      
-      // Handle loading for lazy images
-      if (img.loading === 'lazy') {
-        img.classList.add('loaded');
-        
-        // Preload next images in sequence for better UX
-        const nextImages = img.closest('section')?.querySelectorAll('img[loading="lazy"]:not(.loaded)');
-        if (nextImages && nextImages.length > 0) {
-          const nextImg = nextImages[0];
-          if (nextImg && nextImg !== img) {
-            nextImg.loading = 'eager'; // Preload the next image
-          }
+        50% {
+          opacity: .75;
         }
       }
-      
-      observer.unobserve(img);
+
+      .form-pulse {
+        animation: formPulse 1.5s ease-in-out infinite;
+      }
+
+      /* Loading spinner */
+      .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid rgba(255, 255, 255, .3);
+        border-top-color: #fff;
+        border-radius: 50%;
+        animation: spin .8s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Loading box bg override */
+      #loading {
+        background: linear-gradient(135deg, #0b3d20, #1a6e3c) !important;
+        border-radius: 16px;
+      }
+    </style>
+
+    <script>
+      function submitForm(event) {
+        event.preventDefault();
+        document.getElementById("loading").style.display = "block";
+
+        fetch('https://ayurlifeindia.shop/demo.php', {
+          method: 'POST',
+        })
+          .then(response => response.json())
+          .then(data => {
+            if (data.status == 200) {
+              fetch('https://script.google.com/macros/s/AKfycbztilYR0Yc8q9w74-a-p1OF-1QzsDAr6IY4yGmZltpgCSslRk2PtNEe_a1n8ZlA_jHWXw/exec', {
+                method: 'POST',
+                body: new FormData(event.target)
+              })
+                .then(response => {
+                  document.getElementById("loading").style.display = "none";
+
+                  Swal.fire({
+                    icon: 'success',
+                    title: 'Success',
+                    text: 'Processing Your Order. Please wait....',
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'OK',
+                  });
+
+                  return response.text();
+                })
+                .then(data => {
+                  window.location.href = 'https://ayurlifeindia.shop/a3-herbal-extra-care-tablet-thankyou/';
+                });
+              return false;
+            }
+            if (data.status == 400) {
+              document.getElementById("loading").style.display = "none";
+
+              Swal.fire({
+                icon: 'error',
+                title: 'Duplicate Order Found! 🚫',
+                text: 'Oh no! 🚫 Our system has detected that you are attempting to submit a fake or duplicate Order. Please try again after 12 hours. ⏳.',
+                confirmButtonColor: '#d33',
+                confirmButtonText: 'Try After 12 Hours ',
+              });
+            }
+          })
+          .catch(error => {
+            console.error('Fetch error:', error);
+            document.getElementById("loading").style.display = "none";
+          });
+        return false;
+      }
+
+      // Animated dots for loading state
+      let dotCount = 1;
+      setInterval(() => {
+        const d = document.getElementById('dotAnim');
+        if (d) { dotCount = (dotCount % 3) + 1; d.textContent = '.'.repeat(dotCount); }
+      }, 500);
+    </script>
+  </head>
+
+  <body>
+    <section class="order-section" id="order">
+      <div class="sec-label">Order Now</div>
+      <h2 class="order-title">अपने बच्चे के बालों की देखभाल <span>आज से शुरू करें</span></h2>
+      <p class="order-desc">📝 नीचे Name और Mobile Number भरें। हमारी टीम आपसे कॉल करके आपका ऑर्डर कन्फर्म कर
+        देगी।<br><br>👉 जितनी जल्दी care शुरू करेंगे, उतना जल्दी बालों को support मिल सकता है।</p>
+      <form onsubmit="return submitForm(event)">
+        <div class="form-wrap">
+          <div class="form-group">
+            <label class="form-label">आपका नाम (Name)</label>
+            <input type="text" required name="name" class="form-input" placeholder="आपका नाम यहाँ लिखें">
+          </div>
+          <div class="form-group">
+            <label class="form-label">मोबाइल नंबर (Mobile)</label>
+            <input type="tel" required name="phone" placeholder="10 अंकों का Mobile Number" maxlength="10"
+              pattern="[6-9][0-9]{9}" class="form-input" placeholder="10 अंक का नंबर">
+          </div>
+          <!-- Submit CTA -->
+          <input id="submitBtn" type="submit" value="🛒अभी आर्डर Book करे ...."
+            class="cta-btn submit-btn fd font-black text-xl py-5 rounded-2xl tracking-wide">
+
+
+          <!-- Loading State -->
+          <div id="loading" style="display:none;" class="rounded-2xl py-5 px-4 text-center"
+            style="background:linear-gradient(135deg,#0b3d20,#27ae60)">
+            <div class="loading-spinner mx-auto mb-3"></div>
+            <p class="fd font-bold text-white text-base">
+              आपका Order Process हो रहा है<span id="dotAnim">...</span>
+            </p>
+            <p class="text-white/70 text-xs mt-1">कृपया प्रतीक्षा करें — यह कुछ seconds में हो जाएगा</p>
+          </div>
+        </div>
+      </form>
+
+      <div class="trust-row">
+        <div class="trust-item"><span>🔒</span><span>Secure</span></div>
+        <div class="trust-item"><span>💳</span><span>Cash on Delivery</span></div>
+        <div class="trust-item"><span>🚚</span><span>Free Shipping</span></div>
+      </div>
+    </section>
+  </body>
+
+  </html>
+
+  <!-- ═══════════ SECTION 7: REVIEWS ═══════════ -->
+  <section>
+    <div class="sec-label">Real Stories</div>
+    <h2 class="sec-title">⭐ Customers <span class="yellow">Experience</span></h2>
+    <p class="sec-desc">हज़ारों parents ने अपने बच्चों के लिए Alopecia Herbal Care को choose किया है।</p>
+
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="review-header">
+          <picture>
+            <source srcset="./Image/Client1.png"
+              type="image/webp">
+            <img src="./Image/Client1.png" alt="Priya"
+              class="review-avatar" width="100" height="100" loading="lazy">
+          </picture>
+          <div class="reviewer-info">
+            <div class="reviewer-name">प्रिया शर्मा</div>
+            <div class="reviewer-loc">📍 जयपुर, राजस्थान</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"मेरे बेटे के सिर में 3-4 जगह गंजे पैच हो गए थे। 2 महीने के उपयोग के बाद छोटे-छोटे नए बाल
+          दिखने लगे हैं। बहुत खुश हूँ।"</p>
+        <picture>
+          <source srcset="./Image/Review1.png"
+            type="image/webp">
+          <img src="./Image/Review1.png" alt="Result"
+            class="review-img" width="400" height="250" loading="lazy">
+        </picture>
+        <span class="review-badge">✔ Verified Purchase</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <picture>
+            <source srcset="./Image/Client2.png"
+              type="image/webp">
+            <img src="./Image/Client2.png" alt="Rakesh"
+              class="review-avatar" width="100" height="100" loading="lazy">
+          </picture>
+          <div class="reviewer-info">
+            <div class="reviewer-name">राकेश वर्मा</div>
+            <div class="reviewer-loc">📍 दिल्ली, NCR</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"बेटी का confidence बिल्कुल कम हो गया था। Alopecia Herbal Care शुरू किया, अब scalp
+          healthy लग रही है और बाल कम झड़ रहे हैं।"</p>
+        <picture>
+          <source srcset="./Image/Review2.png"
+            type="image/webp">
+          <img src="./Image/Review2.png" alt="Result"
+            class="review-img" width="400" height="250" loading="lazy">
+        </picture>
+        <span class="review-badge">✔ Verified Purchase</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <picture>
+            <source srcset="./Image/Client3.png"
+              type="image/webp">
+            <img src="./Image/Client3.png" alt="Sunita"
+              class="review-avatar" width="100" height="100" loading="lazy">
+          </picture>
+          <div class="reviewer-info">
+            <div class="reviewer-name">सुनीता पटेल</div>
+            <div class="reviewer-loc">📍 अहमदाबाद, गुजरात</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">"Chemical-free होने की वजह से मुझे बच्चे पर use करने में कोई डर नहीं था। Free diet chart
+          बहुत helpful है। पूरे परिवार को recommend करूँगी।"</p>
+        <picture>
+          <source srcset="./Image/Review3.png"
+            type="image/webp">
+          <img src="./Image/Review3.png" alt="Result"
+            class="review-img" width="400" height="200" loading="lazy">
+        </picture>
+        <span class="review-badge">✔ Verified Purchase</span>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ═══════════ SECTION 10: FAQ ═══════════ -->
+  <section>
+    <div class="sec-label">Help</div>
+    <h2 class="sec-title">❓ <span class="yellow">FAQs</span> – अक्सर पूछे जाने वाले सवाल</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Alopecia Herbal Care क्या है?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">यह एक Ayurvedic Herbal Formula है जो बच्चों के scalp को पोषण देकर hair follicles को support
+          करता है। यह chemical-free और GMP certified है।</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">परिणाम दिखने में कितना समय लगता है?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">हर बच्चे की scalp अलग होती है। आमतौर पर नियमित उपयोग से 2–3 महीने में असर दिखने लगता है।
+          परिणाम व्यक्ति-व्यक्ति में अलग हो सकते हैं।</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">क्या यह बच्चों के लिए safe है?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">हाँ, यह 100% chemical-free Ayurvedic formula है जो बच्चों की sensitive scalp के लिए gentle
+          है। </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Cash on Delivery available है क्या?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">जी हाँ, Cash on Delivery (COD) की सुविधा उपलब्ध है। आपको order deliver होने पर ही payment
+          करनी होगी।</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Delivery में कितने दिन लगेंगे?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">सामान्यतः 3–7 business days में delivery हो जाती है। आपका order confirm होने के बाद tracking
+          details दी जाएगी।</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">10% discount कैसे मिलेगा?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">ऊपर दिया गया form भरें। हमारी team call करके order confirm करने पर आपको automatic 10%
+          discount apply किया जाएगा। यह limited time offer है।</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">क्या Free Hair Care Diet Chart मिलेगा?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">हाँ! हर order के साथ FREE Hair Care Diet Chart दिया जाता है जो बच्चों के बालों की care के लिए
+          बहुत helpful है।</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ DISCLAIMER ═══════════ -->
+  <section class="disclaimer-section">
+    <div class="disclaimer-title">⚠️ Disclaimer</div>
+    <p class="disclaimer-text">
+      यह उत्पाद Ayurvedic Herbal Care formula है और इसे किसी बीमारी के उपचार, निदान, या इलाज के रूप में प्रस्तुत नहीं
+      किया गया है। बताए गए परिणाम व्यक्ति-व्यक्ति में भिन्न हो सकते हैं। Before & After images illustrative हैं। उपयोग
+      से पहले qualified Ayurvedic doctor या healthcare professional से परामर्श लें। बच्चे को कोई भी herbal product देने
+      से पहले doctor की सलाह अवश्य लें। यह product FSSAI / Ayush guidelines के अनुसार manufactured है।
+    </p>
+  </section>
+
+  <!-- Bottom padding for sticky bar -->
+  <div style="height:60px"></div>
+
+  <script>
+    function toggleFaq(el) {
+      const item = el.closest('.faq-item');
+      const allItems = document.querySelectorAll('.faq-item');
+      allItems.forEach(i => {
+        if (i !== item) i.classList.remove('open');
+      });
+      item.classList.toggle('open');
     }
-  });
-}, {
-  rootMargin: '50px 0px',
-  threshold: 0.01
-});
 
-// Observe all images for enhanced lazy loading
-document.querySelectorAll('img').forEach(img => {
-  imageObserver.observe(img);
-});
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href="#order"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
 
-// Preload critical images on page load
-window.addEventListener('load', () => {
-  // Preconnect to image CDN for faster loading
-  const preconnectLink = document.createElement('link');
-  preconnectLink.rel = 'preconnect';
-  preconnectLink.href = 'https://images.unsplash.com';
-  preconnectLink.crossOrigin = 'anonymous';
-  document.head.appendChild(preconnectLink);
-});
-</script>
+    // Intersection Observer for fade-up animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.benefit-item, .review-card, .symptom-card, .step-item, .cert-badge').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(el);
+    });
+
+    // Enhanced lazy loading for images with intersection observer
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+
+          // Handle loading for lazy images
+          if (img.loading === 'lazy') {
+            img.classList.add('loaded');
+
+            // Preload next images in sequence for better UX
+            const nextImages = img.closest('section')?.querySelectorAll('img[loading="lazy"]:not(.loaded)');
+            if (nextImages && nextImages.length > 0) {
+              const nextImg = nextImages[0];
+              if (nextImg && nextImg !== img) {
+                nextImg.loading = 'eager'; // Preload the next image
+              }
+            }
+          }
+
+          observer.unobserve(img);
+        }
+      });
+    }, {
+      rootMargin: '50px 0px',
+      threshold: 0.01
+    });
+
+    // Observe all images for enhanced lazy loading
+    document.querySelectorAll('img').forEach(img => {
+      imageObserver.observe(img);
+    });
+
+    // Preload critical images on page load
+    window.addEventListener('load', () => {
+      // Preconnect to image CDN for faster loading
+      const preconnectLink = document.createElement('link');
+      preconnectLink.rel = 'preconnect';
+      preconnectLink.href = 'https://images.unsplash.com';
+      preconnectLink.crossOrigin = 'anonymous';
+      document.head.appendChild(preconnectLink);
+    });
+  </script>
 </body>
+
 </html>
